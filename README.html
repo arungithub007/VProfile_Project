@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>VProfile&lowbar;Project</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-dark">
+            <h1 id="vprofile_project">VProfile_Project</h1>
+<h2 id="about-the-project">About the Project</h2>
+<ul>
+<li>Multitier  web application stack</li>
+<li>setup on laptop/desktop</li>
+<li>This project acts as baseline for upcoming projects</li>
+<li>Helps us to setup any project locally</li>
+</ul>
+<h2 id="scenario">Scenario</h2>
+<ul>
+<li>working in a project</li>
+<li>variety of services that powers ur project runtime</li>
+<li>runbook / setup doc for setup stack</li>
+</ul>
+<h2 id="problem">Problem</h2>
+<ul>
+<li>not comfortable in making changes in servers</li>
+<li>local setup is comlex</li>
+<li>time consuming</li>
+<li>not repeatable</li>
+</ul>
+<h2 id="solution">Solution</h2>
+<ul>
+<li>get a local stup &gt;&gt; automated &gt;&gt; code IAAC &gt;&gt; Automated</li>
+</ul>
+<h2 id="tools">Tools</h2>
+<ul>
+<li>Hypervisor ---&gt; ORACAL VM VIRTUALBOX</li>
+<li>AUTOMATION ---&gt; VAGRANT</li>
+<li>CLI        ---&gt; GIT BASH</li>
+<li>IDE        ---&gt; Sublime_text/vscode/notepad++</li>
+</ul>
+<h2 id="objective">OBJECTIVE</h2>
+<ul>
+<li>VM automation locally</li>
+<li>BAseline for upcomming projects</li>
+<li>Realworld project setup locally {for R &amp; D}</li>
+</ul>
+<h2 id="architecture-of-project-services">ARCHITECTURE OF PROJECT SERVICES</h2>
+<ul>
+<li>NGINX ---&gt;  is a web service to create loadbalancing experrience.</li>
+<li>TOMCAT ---&gt; it is <strong>java web appication service</strong></li>
+<li>RABBIMQ ---&gt; it is a queing agent (message brocker)</li>
+<li>MEMCACHED ---&gt; it is a Database caching connected to mysql server</li>
+<li>MYSQL ---&gt; is database</li>
+</ul>
+<h2 id="architecure-of-automated-setup">ARCHITECURE OF AUTOMATED SETUP</h2>
+<ul>
+<li>vagrant</li>
+<li>virtualbox</li>
+<li>gitbash</li>
+<li>some scripts and commands</li>
+</ul>
+<h2 id="flow-of-entire-stack">FLOW OF ENTIRE STACK</h2>
+<ul>
+<li>
+<p>setup tools metioned in prereqs</p>
+</li>
+<li>
+<p>clone source code</p>
+</li>
+<li>
+<p>cd into vagrant dir</p>
+</li>
+<li>
+<p>bringup Vms</p>
+</li>
+<li>
+<p>validate</p>
+</li>
+<li>
+<p>setup all the servies</p>
+<ul>
+<li>mysql</li>
+<li>memcahed</li>
+<li>rabbit MQ</li>
+<li>tomcat</li>
+<li>nginx</li>
+<li>App Build and diploy</li>
+</ul>
+</li>
+<li>
+<p>Verify from browser</p>
+<p><img src="file:///d:\Udemy-devops\VProfile_Project\Re-Architecture%20WebApp%20on%20AWS%20Cloud.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\vprofile%20projectsetup%20Automate.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Vprofile%20projectsetup%20Manual.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Ansible%20for%20complete%20stack%20first%20execution.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Ansible%20for%20complete%20stack%20second%20execution.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Ansible%20for%20complete%20stack%20third%20execution.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Architecture%20Of%20Continous%20Delivery%20PipeLine.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\AWS%20CI_CD%20Project.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\CICD%20for%20Docker%20Kubernetes%20Using%20Jenkins.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Containerization%20of%20Java%20Project%20using%20Docker.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Continous%20Delivery%20And%20Configuration%20Management(jenkins%20plus%20Ansible).png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Continous%20Delivery%20of%20Java%20Web%20Application.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Continous%20delivery%20on%20AWS%20Cloud(Java%20App).png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Continous%20Integration%20On%20AWS%20Cloud.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Continuous%20Integration%20Using%20Jenkins,Nexus,Sonarqube&amp;%20Slack.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\EMart%20App%20Architecture.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Java%20App%20Deployment%20on%20Kubernetes%20Cluster.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Terraform%20for%20cloud%20State%20Management%20Converted.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\VPC%20Design%20&amp;%20Components.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\VPC%20Diagram.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Ansible%20Architecture.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\Ansible%20for%20AWS%20VPC.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\AWS%20Lift&amp;Shift%20project.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\CICD%20for%20Containers.png" alt="alt text"> <img src="file:///d:\Udemy-devops\VProfile_Project\High%20Avalability%20VPC.png" alt="alt text"></p>
+</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
